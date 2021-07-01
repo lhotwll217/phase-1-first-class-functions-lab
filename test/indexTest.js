@@ -5,7 +5,7 @@ describe('index.js', function () {
     expect(drivers, 'MAKE SURE YOUR ARRAY MANIPULATIONS ARE NON-DESTRUCTIVE').to.eql(['Sally', 'Bob', 'Freddy', 'Claudia']);
   });
 
-  describe('returnFirstTwoDrivers()', function () {
+  describe('tiplie()', function () {
     it('should return a new array containing the first two drivers from the passed-in array', function () {
       expect(returnFirstTwoDrivers(drivers)).to.eql(['Sally', 'Bob']);
     });
@@ -62,7 +62,7 @@ describe('index.js', function () {
       expect(fareTripler).to.be.a('function');
     });
 
-    it('triples fares', function() {
+    it('triples fares', function () {
       expect(fareTripler(12)).to.eql(36);
     });
   });
